@@ -28,3 +28,11 @@ EXCEPTION
         RAISE;
 END;
 /
+
+EXEC Insert_Warehouse('HUBHN001', 'Hồ Gươm', 'HN');
+EXEC Insert_Warehouse('HUBHN002', 'Tây Hồ', 'HN');
+EXEC Insert_Warehouse('HUBHN003', 'Đống Đa', 'HN');
+EXEC Insert_Warehouse('HUBHN004', 'Ba Đình', 'HN');
+EXEC Insert_Warehouse('HUBHN005', 'Thanh Xuân', 'HN');
+EXEC Insert_Warehouse('HUBHN006', 'Hoàng Mai', 'HN');
+EXEC Insert_Warehouse('HUBHN007', 'Long Biên', 'HN');
