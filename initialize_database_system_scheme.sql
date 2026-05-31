@@ -7,7 +7,9 @@ create table Products(
     Product_Name NVARCHAR2(255),
     Weight NUMBER,
     Cost_Of_Product NUMBER,
-    Rating NUMBER
+    Rating NUMBER,
+    Created_At TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Created_By VARCHAR2(255) 
 );
 
 drop table Warehouses cascade constraints;
@@ -45,6 +47,9 @@ create table Orders_Payment(
 
 
 -- INITIALIZE SYSTEM CONTRAINTS 
+--- Products contraints
+ALTER TABLE Products ADD CONSTRAINT CK_PRODUCTS_CREATED_BY CHECK (Created_By IN ('DN', 'HCM', 'HN'));
+
 --- Warehouses constraints
 ALTER TABLE Warehouses ADD CONSTRAINT CK_WAREHOUSES_DANANG CHECK (Region_Code='DN');
 
