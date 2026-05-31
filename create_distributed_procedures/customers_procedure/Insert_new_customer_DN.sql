@@ -49,6 +49,6 @@ EXCEPTION
 END Insert_Customer;
 /
 
-EXEC Insert_Customer('CUS1001', 'Nguyen Van A', 'Hội An', 5);
-EXEC Insert_Customer('CUS1002', 'Le Thi B', 'Tam Kỳ', 5);
-EXEC Insert_Customer('CUS1003', 'Tran Van ', 'Quảng Ngãi', 5);
+EXEC Insert_Customer('CUSDN001', 'Nguyễn Văn Tèo', 'Hội An', 4);
+EXEC Insert_Customer('CUSDN002', 'Trần Thị Kim ', 'Quảng Ngãi', 4);
+EXEC Insert_Customer('CUSDN003', 'Nguyễn Huy Hoàng', 'Tam Kỳ', 4);
