@@ -13,7 +13,8 @@ BEGIN
 
     UPDATE Orders_Payment
     SET Amount = NVL(v_Amount, Amount),
-        Pay_Status = NVL(v_Pay_Status, Pay_Status)
+        Pay_Status = NVL(v_Pay_Status, Pay_Status),
+        Updated_By = 'HCM'
     WHERE Order_ID = v_Order_ID;
     COMMIT;
 EXCEPTION
